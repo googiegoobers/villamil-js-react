@@ -1,0 +1,80 @@
+body {
+  font-family: Ghibli;
+  background-color: #f5f5f5;
+  /* background-image: url(colorful-twinkling-stars-glitter-gucvem3im68c09xf.gif); */
+  /* background-size: cover; */
+  color: #2d1515;
+  text-align: center;
+  padding: 50px;
+}
+
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 800px;
+}
+
+#ball {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 50% 50%, #ec8fd0, #db2aae, #dd0f3f);
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#ball-stand {
+ border-bottom: 100px solid #52027b;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0px;
+  margin-top: -70px;
+	width: 250px;
+  border-radius: 30%;
+}
+
+
+#ball-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff1fc;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#answer {
+  margin-bottom: 20px;
+  padding: 90px;
+  border-radius: 10px;
+  color: #2d1515;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  min-height: 35px;
+}
+
+#container:focus-within #answer {
+  transform: translateY(-50px);
+  transition: transform 0.2s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  10% { transform: translateY(-10px); }
+  /* 40% { transform: translateY(-60px); }
+  60% { transform: translateY(-30px); }
+  80% { transform: translateY(-10px); } */
+}
+
+.bounce {
+  animation: bounce 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}

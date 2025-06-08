@@ -1,0 +1,123 @@
+*{
+    /* background-color: rgb(248, 240, 230); */
+        font-family: Poppins, sans-serif;
+}
+    
+/* welcome card */
+
+ .popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.welcome-card-popup {
+  padding: 30px 40px;
+  border-radius: 12px;
+  background-color: aliceblue;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  position: relative;
+  min-width: 320px;
+}
+
+.welcome-card-popup h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.welcome-card-popup p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.welcome-card-popup .start-btn{
+    font-size: 20px;
+    width: 40%;
+    height: 70%;
+    padding: 8px 10px;
+    background-color: #2a52b9;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    border-color: white;
+}
+
+
+/* student form */
+
+.student-form{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 80px auto;
+  border: 4px solid #2a52b9;
+  background-color: #fff;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(42,82,185,0.08);
+  padding: 32px 24px;
+}
+
+.student-num{
+    width: 25%;
+    padding: 12px 4px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.counter-age{
+    width: 8%;
+    padding: 12px 4px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+
+
+input{
+    width: 90%;
+    padding: 10px 4px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #2a52b9;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.incdec{
+    font-size: 15px;
+    width: 15%;
+    height: 50%;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #2a52b9;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    border-color: white;
+}
+
+.submit{
+    font-size: 20px;
+    margin: 0 auto;
+    width: 40%;
+    height: 70%;
+    padding: 8px 10px;
+    background-color: #2a52b9;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    border-color: white;
+}
+
+.student-form p{
+    font-size: large;
+    font-weight: 600;
+}
